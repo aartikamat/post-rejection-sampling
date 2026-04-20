@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use this software or the PRFS methodology, please cite it using the metadata from this file."
+title: "Post-Rejection Follow-up Sampling (PRFS): Reference Implementation"
+abstract: "Reference implementation of Post-Rejection Follow-up Sampling, a counterfactual methodology for evaluating filter quality in algorithmic decentralized exchange (DEX) trading systems."
+type: software
+authors:
+  - given-names: "Arati Uday"
+    family-names: "Kamat"
+    orcid: "https://orcid.org/0009-0000-4781-312X"
+    affiliation: "Independent Researcher"
+version: "1.0.0"
+date-released: "2026-04-20"
+doi: "10.5281/zenodo.19671657"
+url: "https://github.com/aartikamat/post-rejection-sampling"
+repository-code: "https://github.com/aartikamat/post-rejection-sampling"
+license: MIT
+keywords:
+  - counterfactual-analysis
+  - algorithmic-trading
+  - dex-trading
+  - post-rejection-sampling
+  - causal-inference
+  - filter-evaluation
+  - cryptocurrency
+  - backtest-bias
+preferred-citation:
+  type: article
+  title: "Post-Rejection Follow-up Sampling: A Methodology for Counterfactual Outcome Measurement in Algorithmic DEX Trading"
+  authors:
+    - given-names: "Arati Uday"
+      family-names: "Kamat"
+      orcid: "https://orcid.org/0009-0000-4781-312X"
+      affiliation: "Independent Researcher"
+  year: 2026
+  month: 4
+  doi: "10.5281/zenodo.19671657"
+  url: "https://doi.org/10.5281/zenodo.19671657"
+  publisher:
+    name: Zenodo
+references:
+  - type: article
+    title: "Hour-Aware Adaptive Risk Management for Autonomous Memecoin Trading: A Multi-Layer Intelligence Framework"
+    authors:
+      - given-names: "Arati Uday"
+        family-names: "Kamat"
+        orcid: "https://orcid.org/0009-0000-4781-312X"
+    year: 2026
+    doi: "10.5281/zenodo.19670719"
+    url: "https://doi.org/10.5281/zenodo.19670719"
