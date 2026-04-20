@@ -16,11 +16,13 @@ Algorithmic trading systems reject the vast majority of candidate signals based 
 ## Method summary
 
 Given a live trading system that emits:
+
 - A stream of **candidate signals** at time `t`
 - A binary **accept/reject** decision for each candidate
 - An observed **outcome** for accepted trades (realized PnL over a holding window `H`)
 
 PRFS additionally records, for each rejected candidate:
+
 - The symbol, mint address, and rejection timestamp
 - The reference price at rejection time
 - The set of signals that passed *up to the rejection gate* (for attribution)
@@ -44,3 +46,36 @@ Requires Python 3.9+ and NumPy. No external trading infrastructure is needed to 
 ```bash
 pip install numpy
 python example.py
+```
+
+## Citation
+
+If you use PRFS in academic work or production systems, please cite:
+
+```bibtex
+@misc{kamat2026prfs,
+  author       = {Kamat, Arati Uday},
+  title        = {Post-Rejection Follow-up Sampling: A Methodology for Counterfactual Outcome Measurement in Algorithmic DEX Trading},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.19671657},
+  url          = {https://doi.org/10.5281/zenodo.19671657}
+}
+```
+
+A GitHub "Cite this repository" button is also available in the sidebar (generated from `CITATION.cff`).
+
+## Scope and limitations
+
+This repository contains a **clean reference implementation** of the PRFS methodology, intended for reproducibility and academic extension. It is not a production trading system and does not contain live market connectors, exchange credentials, or execution logic. The methodology is general — it applies to any algorithmic trading system in which rejections outnumber executions.
+
+## Author
+
+**Arati Uday Kamat** — Independent Researcher
+ORCID: [0009-0000-4781-312X](https://orcid.org/0009-0000-4781-312X)
+SSRN author page: [https://ssrn.com/author=11111069](https://ssrn.com/author=11111069)
+Zenodo: [https://zenodo.org/me](https://zenodo.org/me)
+
+## License
+
+MIT License — see [LICENSE](LICENSE) for full text.
