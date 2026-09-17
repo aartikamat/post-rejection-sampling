@@ -1,49 +1,65 @@
+# CITATION.cff - Full Replacement File
+# Repository: aartikamat/post-rejection-sampling
+# Draft date:  2026-09-17
+# Status: DRAFT - not published. Push after the journal decision or immediately if desired.
+#
+# What changed vs prior draft:
+#   1. Fixed WRONG DOI 20499924 (resolved to unrelated "lst-tools" toolkit, not this paper).
+#      Primary citation now points to arXiv:2606.08228 (verified paper preprint).
+#   2. Fixed reference-implementation DOI 19672364 → 19672363 (verified concept DOI matches
+#      the Data availability line in arXiv v2b and the Zenodo published record).
+#   3. Removed 'counterfactual-measurement' keyword and 'Counterfactual Outcome Measurement'
+#      from title. PRFS is an OBSERVATIONAL measurement methodology; it does not make
+#      counterfactual claims. Title corrected to match arXiv v2 metadata.
+#   4. Added companion dataset DOI (10.5281/zenodo.20043515) as identifier.
+#
 cff-version: 1.2.0
-message: "If you use this software or the PRFS methodology, please cite it using the metadata from this file."
-title: "Post-Rejection Follow-up Sampling (PRFS): Reference Implementation"
-abstract: "Reference implementation of Post-Rejection Follow-up Sampling, a counterfactual methodology for evaluating filter quality in algorithmic decentralized exchange (DEX) trading systems."
+message: "If you use this software or the accompanying dataset, please cite the companion paper preprint on arXiv (2606.08228) and the dataset (Zenodo concept DOI 10.5281/zenodo.20043515)."
+title: "Post-Rejection Follow-up Sampling - Reference Implementation"
+version: 2.0.0
+date-released: 2026-09-17
 type: software
+license: MIT
 authors:
-  - given-names: "Arati Uday"
-    family-names: "Kamat"
+  - family-names: Kamat
+    given-names: Arati Uday
     orcid: "https://orcid.org/0009-0000-4781-312X"
     affiliation: "Independent Researcher"
-version: "1.0.0"
-date-released: "2026-04-20"
-doi: "10.5281/zenodo.19671657"
-url: "https://github.com/aartikamat/post-rejection-sampling"
 repository-code: "https://github.com/aartikamat/post-rejection-sampling"
-license: MIT
+url: "https://github.com/aartikamat/post-rejection-sampling"
 keywords:
-  - counterfactual-analysis
   - algorithmic-trading
   - dex-trading
   - post-rejection-sampling
-  - causal-inference
   - filter-evaluation
+  - observational-measurement
   - cryptocurrency
-  - backtest-bias
+  - selective-labels
+  - solana
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.19672363
+    description: "Reference implementation - Zenodo concept DOI (resolves to latest version)"
+  - type: doi
+    value: 10.5281/zenodo.20043515
+    description: "Companion dataset - Zenodo concept DOI (resolves to latest version)"
 preferred-citation:
   type: article
-  title: "Post-Rejection Follow-up Sampling: A Methodology for Counterfactual Outcome Measurement in Algorithmic DEX Trading"
+  title: "Post-Rejection Follow-up Sampling: Measuring Outcomes of Rejected Decisions in Algorithmic DEX Trading"
   authors:
-    - given-names: "Arati Uday"
-      family-names: "Kamat"
+    - family-names: Kamat
+      given-names: Arati Uday
       orcid: "https://orcid.org/0009-0000-4781-312X"
       affiliation: "Independent Researcher"
   year: 2026
-  month: 4
-  doi: "10.5281/zenodo.19671657"
-  url: "https://doi.org/10.5281/zenodo.19671657"
-  publisher:
-    name: Zenodo
-references:
-  - type: article
-    title: "Hour-Aware Adaptive Risk Management for Autonomous Memecoin Trading: A Multi-Layer Intelligence Framework"
-    authors:
-      - given-names: "Arati Uday"
-        family-names: "Kamat"
-        orcid: "https://orcid.org/0009-0000-4781-312X"
-    year: 2026
-    doi: "10.5281/zenodo.19670719"
-    url: "https://doi.org/10.5281/zenodo.19670719"
+  identifiers:
+    - type: other
+      value: "arXiv:2606.08228"
+      description: "arXiv preprint"
+    - type: other
+      value: "SSRN:6607301"
+      description: "SSRN abstract"
+    - type: doi
+      value: "10.5281/zenodo.20043515"
+      description: "Companion dataset - Zenodo concept DOI"
+  url: "https://arxiv.org/abs/2606.08228"
