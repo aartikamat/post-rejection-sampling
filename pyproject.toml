@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prfs"
+version = "2.0.0"
+description = "Post-Rejection Follow-up Sampling - reference implementation (v2)"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Arati Uday Kamat", email = "aartikamat2812@gmail.com"}]
+requires-python = ">=3.10"
+dependencies = []  # core is stdlib-only by design
+
+[project.optional-dependencies]
+sim = ["numpy>=1.24"]
+test = ["pytest>=7.0", "coverage>=7.0"]
+
+[project.scripts]
+prfs-run = "prfs.cli:run"
+prfs-verify = "prfs.cli:verify"
+
+[tool.setuptools.packages.find]
+include = ["prfs*", "oracle*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra --strict-markers"
