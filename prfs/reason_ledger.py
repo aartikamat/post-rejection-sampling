@@ -12,11 +12,12 @@ decision_docs/SET_VS_MULTISET_DECISION.md):
   - On the registry side the deposit contains no repeated (mint, timestamp)
     keys at all, so on that side "multiset" reduces to "set" trivially.
 
-  - On the outcome side each row is a SCHEDULED SAMPLE, not a rejection
-    event. The reference schedule Schedule_fix = {5, 15, 60, 240, 1440}
-    minutes generates up to five sample rows per (mint, rejectTs,
-    rejectReason) triple, and every one of those sample rows carries a copy
-    of the reason attributed at emission time. A reason that appears N
+  - On the outcome side each row is a SAMPLE, not a rejection event. Under
+    the reference schedule Schedule_fix = {5, 15, 60, 240, 1440} minutes a
+    (mint, rejectTs, rejectReason) triple has up to five sample rows; in the
+    deposited dataset, produced by a production tracker sweeping every 10
+    minutes, one triple can carry many rows (up to 146). Every sample row
+    carries a copy of the reason attributed at emission time. A reason that appears N
     times at a given (mint, rejectTs) key on the outcome side represents N
     scheduled samples of the SAME logical attribution, not N independent
     attribution decisions. Treating that as a multiplicity signal would
