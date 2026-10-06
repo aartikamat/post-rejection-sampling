@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "prfs"
+name = "post-rejection-sampling"
 version = "2.0.0"
 description = "Post-Rejection Follow-up Sampling - reference implementation (v2)"
 readme = "README.md"
