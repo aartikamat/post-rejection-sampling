@@ -1,6 +1,6 @@
 # CHANGELOG, Paper 2 / PRFS companion reproducibility package
 
-## v2.1 (2026-09-15), PUBLIC-REPOSITORY REPACKAGING (concept-DOI convergence)
+## v2.1 (2026-09-15), public-repository repackaging (concept-DOI convergence)
 
 CSV data files, reference implementation code, tests, cross-check aggregator,
 and computed results remain byte-identical to v2.0. The v2.1 release refreshes
@@ -11,8 +11,7 @@ version-specific DOI:
 - `README.md` and `CITATION.cff` now cite the companion dataset at concept
   DOI `10.5281/zenodo.20043515` (not the version DOI `20043516`), the
   reference implementation at concept DOI `10.5281/zenodo.19672363` (not
-  version DOI `19672364`), and the companion paper preprint at concept DOI
-  `10.5281/zenodo.20499924` (not version DOI `20499925`).
+  version DOI `19672364`), and the companion paper preprint as arXiv:2606.08228.
 - The manuscript's canonical vector figures `Figure_2_sample_density.svg`
   and `Figure_3_filter_volume.svg` are shipped in `figures/`; the
   matplotlib regenerator `figures_gen.py` remains alongside them for
@@ -28,12 +27,10 @@ version-specific DOI:
 No scientific claim, no numerical result, and no test outcome changes in
 this repackaging.
 
-## v2.0 (2026-08-23), SCIENTIFIC CONSISTENCY REMEDIATION
+## v2.0 (2026-08-23), consistency update
 
-CSV data files remain byte-identical to the original v1 deposit. Headline
-numbers are unchanged. The v2 release resolves seven scientific and
-manuscript-consistency defects identified in the D10, D13, D14, D15, D16,
-D17, and D18 pre-audit findings:
+CSV data files remain byte-identical to the original v1 deposit. Seven
+consistency updates (D10, D13 to D18). Headline numbers are unchanged.
 
 - **D14 timestamp normalisation.** Timestamp identity in the coverage and
   reason-attribution pipeline is decided on the CANONICAL epoch-millisecond
@@ -60,7 +57,7 @@ D17, and D18 pre-audit findings:
   (67,000 minus the 8,593 orphan-key rows) with matched percentages
   reported against each. Every downstream artefact states both denominators.
 
-- **D14 honest oracle language.** `oracle/oracle_aggregate.py` renamed from
+- **D14 cross-check wording.** `oracle/oracle_aggregate.py` renamed from
   "independent oracle" to "cross-check aggregator" in every occurrence.
   Docstrings clarify that the module shares the same logical
   set-intersection framework and same Python runtime as the primary
@@ -116,16 +113,15 @@ D17, and D18 pre-audit findings:
   "counterfactual", "causal", "treatment", "effect", "impact", "leads to",
   and "caused by" occur only inside explicit disclaimers of identification.
   The prior "notice of correction" block that appeared before the abstract
-  is removed from the manuscript; version history lives in this CHANGELOG,
-  the reproducibility package, and the cover letter shipped only to the
-  receiving editor.
+  is removed from the manuscript; version history lives in this CHANGELOG
+  and the reproducibility package.
 
 ## v1.0 (2026-08-23), initial reproducibility package
 
 - Introduced the reference implementation `prfs` v2.0.0 with 54 pytest
   tests, all passing, zero skips.
 - Added the secondary cross-check aggregator `oracle/oracle_aggregate.py`
-  (labelled "independent oracle" in v1; corrected in v2).
+  (renamed "cross-check aggregator" in v2).
 - Added `REASON_CONFLICT_LEDGER.csv` (253 rows) with a two-field-and-
   reason-attribution disposition rule.
 - CSV data files: byte-identical to the original 2026-04-19 v1 deposit.

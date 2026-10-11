@@ -1,18 +1,3 @@
-# CITATION.cff - Full Replacement File
-# Repository: aartikamat/post-rejection-sampling
-# Draft date:  2026-09-17
-# Status: DRAFT - not published. Push after the journal decision or immediately if desired.
-#
-# What changed vs prior draft:
-#   1. Fixed WRONG DOI 20499924 (resolved to unrelated "lst-tools" toolkit, not this paper).
-#      Primary citation now points to arXiv:2606.08228 (verified paper preprint).
-#   2. Fixed reference-implementation DOI 19672364 → 19672363 (verified concept DOI matches
-#      the Data availability line in arXiv v2b and the Zenodo published record).
-#   3. Removed 'counterfactual-measurement' keyword and 'Counterfactual Outcome Measurement'
-#      from title. PRFS is an OBSERVATIONAL measurement methodology; it does not make
-#      counterfactual claims. Title corrected to match arXiv v2 metadata.
-#   4. Added companion dataset DOI (10.5281/zenodo.20043515) as identifier.
-#
 cff-version: 1.2.0
 message: "If you use this software or the accompanying dataset, please cite the companion paper preprint on arXiv (2606.08228) and the dataset (Zenodo concept DOI 10.5281/zenodo.20043515)."
 title: "Post-Rejection Follow-up Sampling - Reference Implementation"
