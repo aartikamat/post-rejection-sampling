@@ -136,10 +136,6 @@ Questions, bug reports and feature requests go to the [issue tracker](https://gi
 
 This repository contains a **clean reference implementation** of the PRFS design, intended for reproducibility and academic extension. It is not a production trading system and does not contain live market connectors, exchange credentials, or execution logic. The design is general — it applies to any filter-gated system in which rejections outnumber executions and the rejected object remains observable.
 
-## Competing Interests
-
-The author declares the following competing interest: the trading system from which this reference implementation is drawn is the subject of a pending U.S. provisional patent application in the author's name. No further competing financial or personal interests are declared. The disclosed patent covers system-level architecture claims and does not restrict use of this reference implementation under its MIT licence. Operational parameters intentionally withheld from the companion manuscript (the production system's threshold values and the mapping between anonymised filter labels and internal rule identifiers) are the subject of pending intellectual-property protection; the reference-implementation default schedule disclosed above is not withheld.
-
 ## Author
 
 **Arati Uday Kamat** — Independent Researcher

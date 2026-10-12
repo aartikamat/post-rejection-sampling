@@ -8,7 +8,7 @@ version = "2.0.0"
 description = "Post-Rejection Follow-up Sampling - reference implementation (v2)"
 readme = "README.md"
 license = {text = "MIT"}
-authors = [{name = "Arati Uday Kamat", email = "aartikamat2812@gmail.com"}]
+authors = [{name = "Arati Uday Kamat", email = "arati.kamat@ieee.org"}]
 requires-python = ">=3.10"
 dependencies = []  # core is stdlib-only by design
 
