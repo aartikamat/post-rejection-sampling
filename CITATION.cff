@@ -24,7 +24,7 @@ keywords:
 identifiers:
   - type: doi
     value: 10.5281/zenodo.19672363
-    description: "Reference implementation - Zenodo concept DOI (resolves to latest version)"
+    description: "Reference implementation - Zenodo concept DOI; it archives version 1.0.0 (April 2026). Version 2.0.0 is on GitHub only."
   - type: doi
     value: 10.5281/zenodo.20043515
     description: "Companion dataset - Zenodo concept DOI (resolves to latest version)"
@@ -37,14 +37,12 @@ preferred-citation:
       orcid: "https://orcid.org/0009-0000-4781-312X"
       affiliation: "Independent Researcher"
   year: 2026
+  doi: "10.48550/arXiv.2606.08228"
   identifiers:
-    - type: other
-      value: "arXiv:2606.08228"
-      description: "arXiv preprint"
+    - type: doi
+      value: "10.48550/arXiv.2606.08228"
+      description: "arXiv preprint (arXiv:2606.08228)"
     - type: other
       value: "SSRN:6607301"
       description: "SSRN abstract"
-    - type: doi
-      value: "10.5281/zenodo.20043515"
-      description: "Companion dataset - Zenodo concept DOI"
   url: "https://arxiv.org/abs/2606.08228"

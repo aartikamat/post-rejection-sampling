@@ -87,7 +87,7 @@ prfs-verify --registry-csv rejections.csv --outcomes-csv rejection_outcomes.csv 
 
 ## Example: verifying the archived dataset
 
-The archived dataset is used here only as **example input**. It was **not** collected with `prfs` or under the PRFS schedule: a separate production tracker swept every tracked token every 10 minutes, followed each record for at most 24 hours and kept one record per token, so a new rejection of a tracked token restarted its record. Its first sample is at 2026-04-11T20:26:53Z, and rejections logged before then have no samples. These features of the tracker, not the design implemented in `prfs`, explain the coverage figures below.
+The archived dataset is used here only as **example input**. It was **not** collected with `prfs` or under the PRFS schedule: a separate production tracker swept every tracked token every 10 minutes, followed each record for at most 24 hours and kept one open record per token at a time, so a new rejection of a tracked token restarted its record. Its first sample is at 2026-04-11T20:26:53Z, and rejections logged before then have no samples. These features of the tracker, not the design implemented in `prfs`, explain the coverage figures below.
 
 Running the Quickstart against the archived files gives:
 
@@ -126,6 +126,8 @@ If you use PRFS in academic work, please cite:
 
 A GitHub "Cite this repository" button is also available in the sidebar (generated from `CITATION.cff`).
 
+**Software versions.** The code in this repository is version 2.0.0 (September 2026), available on GitHub only. The software DOI [10.5281/zenodo.19672363](https://doi.org/10.5281/zenodo.19672363) archives the earlier version 1.0.0 (April 2026).
+
 ## Contributing and support
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). Bug fixes, documentation improvements, tests, and portability fixes are welcome; methodology changes are out of scope and belong to the design paper.
@@ -134,7 +136,7 @@ Questions, bug reports and feature requests go to the [issue tracker](https://gi
 
 ## Scope and limitations
 
-This repository contains a **clean reference implementation** of the PRFS design, intended for reproducibility and academic extension. It is not a production trading system and does not contain live market connectors, exchange credentials, or execution logic. The design is general — it applies to any filter-gated system in which rejections outnumber executions and the rejected object remains observable.
+This repository contains a **clean reference implementation** of the PRFS design, intended for reproducibility and academic extension. It is not a production trading system and does not contain live market connectors, exchange credentials, or execution logic. The design may be adapted to other filter-gated systems in which rejections outnumber executions and the rejected object stays observable.
 
 ## Author
 

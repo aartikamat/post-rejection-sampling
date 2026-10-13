@@ -1,5 +1,14 @@
 # CHANGELOG, Paper 2 / PRFS companion reproducibility package
 
+This file records the versions (v1.0 to v2.1) of the paper's reproducibility package, from which the code in this repository was taken. Some files named below (for example `PACKAGE_MANIFEST.md`, `SHA256SUMS`, `figures_gen.py`, `figures/`, `decision_docs/` and `data/checksums.txt`) belong to that package and are not in this repository.
+
+## Software: `post-rejection-sampling` 2.0.0 (this repository)
+
+- The code in this repository is `prfs` version 2.0.0, the reference
+  implementation introduced in package v1.0 below, published on GitHub in
+  September 2026. The software DOI 10.5281/zenodo.19672363 archives the
+  earlier version 1.0.0 (April 2026); version 2.0.0 is on GitHub only.
+
 ## v2.1 (2026-09-15), public-repository repackaging (concept-DOI convergence)
 
 CSV data files, reference implementation code, tests, cross-check aggregator,
